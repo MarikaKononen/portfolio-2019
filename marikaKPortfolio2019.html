@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<title>CLFM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Added own JS file -->
+<script src="portfolio.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Rasa" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/social-share-kit.css" type="text/css">
+<link rel="stylesheet" href="styles.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="fm-top">
+  <div class="fm-bar fm-white fm-wide fm-padding fm-card" id="myNavbarScroll">
+    <a class="fm-bar-item fm-button  fm-hide-large fm-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="fm-bar-item fm-button" id="up"><b>CFML - </b>Marika Könönen<span class="fm-hide-large fm-hide-small"> - Web Developer</span></a>
+
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="fm-right fm-hide-medium fm-hide-small" >
+      <a href="#about" class="fm-bar-item fm-button">About</a>
+      <a href="#projects" class="fm-bar-item fm-button">Projects</a>
+      <a href="#programming" class="fm-bar-item fm-button">Tech Experience</a>
+      <a href="#work" class="fm-bar-item fm-button">Work Experience</a>
+      <a href="#contact" class="fm-bar-item fm-button">Contact</a>
+      
+    </div>
+  </div>
+</div>
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="myNavbar" class="fm-bar-block fm-white fm-hide fm-hide-large fm-top" style="margin-top:46px">
+    <a href="#about" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">About</a>
+    <a href="#projects" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Projects</a>
+    <a href="#programming" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Tech Experience</a>
+    <a href="#work" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Work Experience</a>
+    <a href="#contact" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Contact</a>
+  </div>
+
+
+<!-- Header -->
+<header class="fm-display-container fm-content fm-wide" style="max-width:1500px;" id="home">
+  <img class="fm-image" src="img/metsa.png" alt="Architecture" width="1500" height="800">
+  <div class="fm-display-middle fm-margin-top fm-opacity-div-not-text text-center">
+    <h1 class="fm-jumbo text-white"> <span class="fm-hide-small fm-text-light-grey">Marika Könönen</span></h1>
+    <h3 class="fm-xxlarge text-white"><span class="fm-hide-small fm-text-light-grey fm-hide-medium">Code for My Life</span></h3>
+    <h5 class="fm-xlarge text-white"><span class="fm-hide-small fm-text-light-grey fm-hide-medium">Web Developer</span></h5>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="fm-content fm-padding" style="max-width:1564px">
+
+     <!-- About Section -->
+  <div class="fm-container fm-padding-32" id="about">
+    <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">About Me</h3>
+    <div class="fm-col l3 m6 fm-margin-bottom">   
+        <ul class="fm-ul">
+          <li><h5>Me and My Family</h5></li>
+          <li class="li">Mom of three kids, wife and a dog owner</li>
+          <li>Web Developer - Entrepreneur - Blogger</li>
+          <li>CEO of the family company Finnmotion Oy</li>
+          <li>Coding is mix of art and math</li>
+          <li>I take the pictures for my blog or social media</li>
+          <li>I love outdoor life & nature</li>
+          <li>Believe in yourself & dreams</li>
+        </ul>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+        <ul class="fm-ul">
+            <li><h5>My Education</h5></li>
+            <li><a href="https://fullstackopen-2019.github.io">Full Stack Open 2019 (ongoing)</a></li>
+            <li><a href="https://www.udemy.com/the-web-developer-bootcamp">The Web Develompent Bootcamp (ongoing)</a></li>
+            <li>Bachelor in Software Engineering (2012)</li>
+            <li>ISTQB-Certified Tester, Foundation Level (2013)</li>
+            <li>Further Qualification for Entrepreneurs (2007)</li>
+            <li>Examination of Accounting (2003)</li>
+            <li>Matriculation Examination (2003)</li>
+          </ul>
+        
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+        <ul class="fm-ul">
+            <li><h5>My Tribe</h5></li>
+            <li>6 moms in 4 different time zones</li>
+            <li>Weekly virtual standup meetings</li>
+            <li>Plan and follow daily tasks with KanbanFlow</li>
+            <li>Weeky virtual co-working hours</li>
+            <li>Discuss tech topics</li>
+            <li>Share knowledge</li>
+            <li>Stay accountable and productive</li>
+          </ul>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+        <ul class="fm-ul">
+            <li><h5>My Future</h5></li>
+            <li>Find freelance WordPress (=WP) projects</li>
+            <li>Finish 2 ongoing courses</li>
+            <li>Code my web page from the scratch with WP</li>
+            <li>Use WP as a back-end and React as a front-end</li>
+            <li>Start podcast with my tribe</li>
+            <li>Code 2-3 React applications</li>
+            <li>Work at home - be with my kids</li>
+          </ul>
+    </div>
+    
+ </div>
+
+  <!-- Project Section -->
+  <div class="fm-container fm-padding-32" id="projects">
+    <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">Projects</h3>
+  </div>
+
+
+  <div class="fm-row-padding">
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">eSports Team Finnmotion - WordPress</div>
+        <img class="fm-image" src="img/finnmotion.png" alt="Finnmotion" style="width:100%">
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Code for My Life - blog</div>
+        <a href="https://codeformylife.com"><img class="fm-image" src="img/codefmylife.png" alt="Code for My Life" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Koodi Elämästäni - blog</div>
+        <a href="http://koodielamastani.fi"><img class="fm-image" src="img/koodielamastani.png" alt="Koodi Elämästäni" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Kodari Seikkailee - Blockly Demo</div>
+        <a href="http://kodarit.fi/aika-avaruusseikkailu/"><img src="img/kodarit.png" alt="Kodarit" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+
+ <div class="fm-row-padding">
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">RealUp App - The Win of Hackathon</div>
+        <a href="https://github.com/alteredco/RealUp" target="_blank"><img class="fm-image" src="img/realupapp.png" alt="RealUp" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Onnimanni frontpage - WordPress</div>
+        <img class="fm-image" src="img/onnimanni.png" alt="Onnimanni" style="width:100%">
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Lomalle Lomps - Bootstrap, JS, APIs</div>
+        <a href="projects/LomalleLomps/index.html" target="_blank"><img class="fm-image" src="img/lomalle.png" alt="Koodi Elämästäni" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">See My Work - Bootstrap 4</div>
+        <a href="projects/seemywork/index.html" target="_blank"><img class="fm-image" src="img/seemywork.png" alt="See My Work" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fm-row-padding">
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Naiset Koodaamaan!</div>
+        <a href="projects/inspirewomentocode/index.html" target="_blank"><img class="fm-image" src="img/naiset.png" alt="Naiset Koodaamaan" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Colors of Nature - Bootstrap 4</div>
+        <a href="projects/colors/index.html#" target="_blank"><img class="fm-image" src="img/colors.png" alt="RealUp" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Lahjatoivekone - Bootstrap</div>
+        <a href="projects/gallery-lahjakone/landingpage.html" target="_blank"><img class="fm-image" src="img/lahjakone.png" alt="Lahjakone" style="width:100%"></a>
+        
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">My Image Gallery - Bootstrap</div>
+        <a href="projects/gallery-lahjakone/gallery.html" target="_blank"><img class="fm-image" src="img/gallery.png" alt="Gallery" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="fm-row-padding">
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Old portfolio</div>
+        <a href="https://rawgit.com/MarikaKononen/my-portfolio/master/index.html" target="_blank"><img class="fm-image" src="img/old-portfolio.png" alt="Portfolio" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Photo Grid - CSS</div>
+        <a href="projects/photoGrid/photoGrid.html" target="_blank"><img class="fm-image" src="img/photo-grid.png" alt="PhotoGrid" style="width:100%"></a>
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Application KOIRAKO</div>
+        <a href="https://www.theseus.fi/bitstream/handle/10024/46866/Kononen_Marika.pdf?sequence=1&isAllowed=y" target="_blank"><img class="fm-image" src="img/koirako.png" alt="KOIRAKO" style="width:100%"></a>
+        
+      </div>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <div class="fm-display-container fm-purple-palette fm-opacity">
+        <div class="fm-display-topleft fm-black fm-padding">Epooq</div>
+        <a href="https://www.worldsummitawards.org/winner/epooq/" target="_blank"><img class="fm-image" src="img/epooq.png" alt="Epooq" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Tech Experience Section -->
+   <!-- First row -->
+  <div class="fm-container fm-padding-32" id="programming">
+    <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">Tech Experience</h3>
+    <p>I started to code 12 years ago but last two years my coding has been even more goal oriented than ever. 
+      My strenght is definitely wide basic knowledge in different tech areas, but my focus is on web development and especially on full stack development.
+      WordPress is wonderful environment which makes coding easy with the build-in functions; even if you are developing web servise alone, with help of
+      WordPress it can be easier because it takes care of the back-end as long as you know, which build-in functions works together with different use cases.
+
+      JavaScript library React is fast and takes coding experience totally new level. My purpose is to combine these two techniques by using WordPress as a back-end 
+      and build the font-end with React. 
+
+    </p>
+  </div>
+
+  <div class="fm-row-padding fm-grayscale">
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <ul class="fm-ul">
+        <li><h5>Front-end Techniques <span class="fm-opacity small"> over 10 years</span></h5></li>
+        <li>HTML <span class="fm-opacity small">since 2006</span></li>
+        <li>CSS <span class="fm-opacity small">since 2006</span></li>
+        <li>Bootstrap <span class="fm-opacity small">since 2017</span></li>
+        <li>React <span class="fm-opacity small">since 2018</span></li>
+      </ul>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <ul class="fm-ul">
+        <li><h5>Back-end Techniques <span class="fm-opacity small"> over 10 years</span></h5></li>
+        <li>Java <span class="fm-opacity small">since 2007</span></li>
+        <li>Python <span class="fm-opacity small">since 2013</span></li>
+        <li>JavaScript <sub class="fm-opacity small">since 2017</span></li>
+        <li>PHP <span class="fm-opacity small">since 2018</span></li>
+        <li>MongoDB <span class="fm-opacity small">since 2018</span></li>
+        <li>Node.js <span class="fm-opacity small">since 2018</span></li>
+      </ul>
+    </div>
+    
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <ul class="fm-ul">
+        <li><h5>Frame Works and Libraries <span class="fm-opacity small">1 year</span></h5></li>
+        <li>React - JavaScript library </li>
+        <li>JQuery - JavaScript library </li>
+        <li>Ajax - Asynchronous JavaScript and XML </li>
+        <li>JSON - JavaScript Object Notation</li>
+        <li>Blockly - A JavaScript library for building visual programming editors</li>
+        
+      </ul>
+    </div>
+
+    <div class="fm-col l3 m6 fm-margin-bottom">
+        <ul class="fm-ul">
+          <li><h5>Documenting and Testing</h5></li>
+          <li><a href="https://youtu.be/YE7f3Hd-9Mw" target="_blank">Cypress.io e2e testing tool</a></li>
+          <li>UML modelling language</li>
+          <li>Documentation of software development</li>
+          <li>Create and run tests</li>
+          <li>Test automation</li>
+        </ul>
+      </div>
+  </div> 
+
+  <!-- Second row -->
+  <div class="fm-row-padding">
+      <div class="fm-col l3 m6 fm-margin-bottom">
+        <div class="fm-display-container fm-purple-palette">
+          <div class="fm-display-topleft fm-black fm-padding">Summer Deskview</div>
+          <img src="img/rennosti.jpeg" alt="Terassilla" style="width:100%">
+        </div>
+      </div>
+      <div class="fm-col l3 m6 fm-margin-bottom">
+        <div class="fm-display-container fm-purple-palette">
+          <div class="fm-display-topleft fm-black fm-padding">Planning Scratch</div>
+          <img src="img/scratch.JPG" alt="Scratch" style="width:100%">
+        </div>
+      </div>
+      <div class="fm-col l3 m6 fm-margin-bottom">
+        <div class="fm-display-container fm-purple-palette">
+          <div class="fm-display-topleft fm-black fm-padding">My Office</div>
+          <img src="img/kitchen.jpg" alt="" style="width:100%">
+        </div>
+      </div>
+      <div class="fm-col l3 m6 fm-margin-bottom">
+        <div class="fm-display-container fm-purple-palette">
+          <div class="fm-display-topleft fm-black fm-padding">Deskview</div>
+          <img src="img/computers.jpg" alt="Computers" style="width:100%"></a>
+        </div>
+      </div>
+    </div>
+
+  <!-- Third row -->
+  <div class="fm-row-padding fm-grayscale">
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <ul class="fm-ul">
+        <li><h5>Teaching <span class="fm-opacity small"> 1.5 years</span></h5></li>
+        <li>Basics of the programming structures - Python</li>
+        <li>Scratch - Code.org - Codesters</li>
+        <li>Micro:Bit - Edison robot - Rasberry Pi</li>
+        <li>HTML-CSS-Bootsrap-JavaScript</li>
+        <li>2D & 3D game programming in visual environments</li>
+        <li>Teach kids, youth and adults</li>
+        <li>Teaching in courses & summer camp & workshops</li>
+        <li>Webinars for teachers</li>
+        <li>Plan and develop teaching materials</li>
+      </ul>
+    </div>
+    
+    <div class="fm-col l3 m6 fm-margin-bottom">
+        <ul class="fm-ul">
+          <li><h5>WordPress Theme Developing <span class="fm-opacity small"> 1 year</span></h5></li>
+          <li>PHP - HTML - CSS - Bootstrap<span class="fm-opacity small"> basic web dev</span></li>
+          <li>JQuery - Ajax <span class="fm-opacity small">make coding easier</span></li>
+          <li>Usage of WP build-in functions<span class="fm-opacity small"> makes security better</span></li>
+          <li>Create shortcuts</li>
+          <li>Create frontend by using WP loops</li>
+          <li>Create page templates</li>
+          <li>Create navigation bar</li>
+          <li>Create side bar</li>
+          <li>Admin page building</li>
+        </ul>
+    </div>
+    <div class="fm-col l3 m6 fm-margin-bottom">
+      <ul class="fm-ul">
+        <li><h5>WordPress Theme Developing</h5></li>
+        <li>Add items to admin page</li>
+        <li>Activate/deactivate items from adming page</li>
+        <li>Custom post type</li>
+        <li>Custom fields</li>
+        <li>ACF (Advanced Custom Fields)</li>
+        <li>Custom columns</li>
+        <li>Custom meta fields</li>
+        <li>Built-in contact form</li>
+        <li>Add custom post type to widget area</li>
+      </ul>
+    </div>  
+     <div class="fm-col l3 m6 fm-margin-bottom">
+        <ul class="fm-ul">
+          <li><h5>Other Tech Related Experience</h5></li>
+          <li>Scrum and Kanban</li>
+          <li>Responsiveness of app / site</li>
+          <li>Basics of Machine Learning</li>
+          <li>Basics of Pattern Recognition</li>
+          <li><a href="http://summit.momscancode.com/speakers.html#Marika" target="_blank">Speaker in Moms Can: Code Virtual Summit II</a></li>
+          <li><a href="https://www.momscancode.com/speakers" target="_blank">Interview in Moms Can: Code Virtual Summit</a></li>
+        </ul>
+      </div>
+
+  </div>
+
+    <!-- Work Experience Section -->
+    <div class="fm-container fm-padding-32" id="work">
+      <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">Work Experience</h3>
+    </div>
+
+    
+  
+    <div class="fm-row-padding fm-grayscale">
+      <!-- column 1 -->
+      <div class="fm-col l6 m12 fm-margin-bottom">
+        <table class="fm-table">
+          <tr>
+            <th>Job Description</th>
+            <th>Company</th> 
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>CEO</td>
+            <td>Finnmotion Oy</td> 
+            <td>21.06.2018 - to present</td>
+          </tr>
+          <tr>
+            <td>Web Developer, Coding Teacher</td>
+            <td>Finnmotion Oy</td> 
+            <td>01.03.2017 - to present</td>
+          </tr>
+          <tr>
+            <td>R & D Engineer</td>
+            <td>Nokia Solutions and Networks Oy</td> 
+            <td>04.03.2013 - 01.01.2018</td>
+          </tr>
+          <tr>
+            <td>Accounting Clerk</td>
+            <td>Tmi Finnmotion, Finnmotion Oy</td> 
+            <td>01.11.2007 - to present</td>
+          </tr>
+          <tr>
+            <td>Clerical Employee</td>
+            <td>KT Kone Ojala Oy</td> 
+            <td>24.04.2010 - 03.11.2011</td>
+          </tr>
+          <tr>
+            <td>UI Programmer</td>
+            <td>Oppifi Oy</td> 
+            <td>01.07.2009 - 31.08.2009</td>
+          </tr>     
+          <tr>
+            <td>Personal Care Assistant</td>
+            <td>Kotihoito Aurinkoiset Oy</td> 
+            <td>01.04.2008 - 15.08.2009</td>
+          </tr>
+          <tr>
+            <td>Accounting Clerk</td>
+            <td>Graham Packaging Company Oy</td> 
+            <td>19.06.2007 - 24.08.2007</td>
+          </tr>
+          <tr>
+            <td class="fm-border-0">Accounting Assistant</td>
+            <td class="fm-border-0">Graham Packaging Company Oy</td> 
+            <td class="fm-border-0">03.12.2005 - 29.09.2006</td>
+          </tr>        
+        </table>
+      </div>
+      <!-- column 2 -->
+      <div class="fm-col l6 m12 fm-margin-bottom">
+          <table class="fm-table">
+            <tr>
+              <th>Job Description</th>
+              <th>Company</th> 
+              <th>Year</th>
+            </tr>
+            <tr>
+              <td >Accounting Clerk</td>
+              <td>No Brakes Marketing Oy</td>   
+              <td>25.09.2003 - 05.08.2005</td>
+            </tr>
+            <tr>
+              <td>Personal Care Assistant</td>
+              <td>Alli Hästbacka</td> 
+              <td>19.06.2003 - 15.08.2003</td>
+            </tr>
+            <tr>
+              <td>Kitchen Helper, Cleaner</td>
+              <td>Helsingin VMP Palvelu Oy</td> 
+              <td>28.02.2003 - 07.06.2003</td>
+            </tr>
+            <tr>
+              <td>Production Employee</td>
+              <td>Vantaan Tiimipalvelu Oy</td> 
+              <td>26.06.2001 - 17.08.2001</td>
+            </tr>
+            <tr>
+              <td>Cleaner</td>
+              <td>HMR-Palvelut Oy</td> 
+              <td>19.02.2001 - 01.09.2001</td>
+            </tr>
+            <tr>
+              <td>Product Representative</td>
+              <td>Publicis Dialog Oy</td> 
+              <td>16.08.2000 - 05.03.2001</td>
+            </tr>     
+            <tr>
+              <td>Production Employee</td>
+              <td>Fazer Suklaa Oy</td> 
+              <td>14.08.2000 - 01.12.2000</td>
+            </tr>
+            <tr>
+              <td>Horse Stable Employee</td>
+              <td>Hattel Horse</td> 
+              <td>04.11.1999 - 04.02.2000</td>
+            </tr>
+            <tr>
+              <td class="fm-border-0">Cleaner</td>
+              <td class="fm-border-0">ISS Suomi Oy</td> 
+              <td class="fm-border-0">16.06.1998 - 16.04.1999</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+  <!-- Contact Section -->
+  <div class="fm-container fm-padding-32" id="contact">
+    <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="fm-input fm-border" type="text" placeholder="Name" required name="Name">
+      <input class="fm-input fm-section fm-border" type="text" placeholder="Email" required name="Email">
+      <input class="fm-input fm-section fm-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="fm-input fm-section fm-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="fm-button fm-black fm-section" type="submit">
+        <i class="far fa-envelope pr-2"></i>SEND MESSAGE
+      </button>
+      <a href="javascript:" id="return-to-top" class="fm-right"><i id="return-top" class="fas fa-chevron-circle-up"></i></a>
+    </form>
+  </div>
+
+  
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="fm-center fm-black fm-padding-16">
+  <div class="col-sm-12 pb-3 pt-3">
+    <div class="d-sm-flex justify-content-center ssk-group ssk-rounded ssk-grayscale bottom-padding">
+      <a href="https://www.instagram.com/codeformylife/" class="ssk ssk-instagram"></a>
+      <a href="https://www.facebook.com/codeformylife/" class="ssk ssk-facebook"></a>
+      <a href="https://twitter.com/koodiela" class="ssk ssk-twitter"></a>
+      <a href="https://www.facebook.com/koodielamastani/" class="ssk ssk-facebook"></a>
+    </div>
+  </div>
+  <p>Marika Könönen - Finnmotion Oy © 2019. All Rights Reserved.</p>
+</footer>
+
+
+
+  <script>
+    // ===== Scroll to Top ==== 
+    $(window).scroll(function() {
+      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+          $('#return-to-top').fadeIn(200);    // Fade in the arrow
+      } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+      }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+      $('body,html').animate({
+          scrollTop : 0                       // Scroll to top of body
+    }, 900);
+  });
+
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className.indexOf("fm-show") == -1) {
+      x.className += " fm-show";
+    } else { 
+      x.className = x.className.replace(" fm-show", "");
+    }
+  }
+
+
+  </script>
+</body>
+
+
+
+</html>
+

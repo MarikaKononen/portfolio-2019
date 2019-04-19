@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Naiset Koodaamaan</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="container">  
+            <div class="jumbotron text-center" id="jumbotron">
+                <h1>Naiset koodaamaan!</h1>
+                <p>Kiinnostaako koodaus - Suomi tarvitsee naiskoodareita</p> 
+                <p>Tule mukaan, opitaan yhdessä</p>
+            </div> 
+            
+            <div class="row" id="firstRow">
+                
+                <div class="col-sm-1">
+                    <!-- empty space for comming stuff -->
+                </div> 
+
+                <div class="col-sm-4 firstColumn text-center">
+                    <p>Joustavat työajat</p>
+                    <p>Työskentele kotona/mökillä/reissussa</p>
+                    <p>osa-aikaisesti/kokoaikaisesti/kausiluonteisesti</p>
+                    <p>Ole työntekijä/freelancer/yrittäjä</p>
+                    <p>Rajattomasti mahdollisuuksia</p>
+                    <p>Vain taivas on rajana</p>
+                </div>
+
+                <div class="col-sm-3 firstColumn text-center">
+                    <p>Koodaus on</p>
+                    <p>luovaa</p>
+                    <p>palkitsevaa</p>
+                    <p>inspiroivaa</p>
+                    <p>antoisaa</p>
+                    <p>tai matemaattista, jos niin haluat</p>
+                </div>
+
+                <div class="col-sm-3 firstColumn text-center">
+                    <p>Tule mukaan luomaan elämästäsi sellaisen kuin haluat</p>
+                    <p>Anna meidän auttaa sinut alkuun tekniikan alalla</p>
+                    <p>Kiinnostuitko, edes vähän?</p>
+                    <p>Klikkaa <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">tästä</button> ja täytä lomake, olemme sinuun yhteydessä</p>
+
+
+                </div>    
+
+                <div class="col-sm-2">
+                <!-- empty space for comming stuff -->
+                </div>
+                    
+
+            </div>
+           
+
+        </div>
+        <!-- Ohje: bootstrap modal alkaa tästä-->
+        <!-- Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Kyllä, haluan lisää tietoa naiskoodarihankkeesta</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline" action="/action_page.php">
+                            <div class="form-group">
+                                <label for="email">Sähköposti:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox">Minulle saa lähettää jatkossa sähköpostia aiheesta</label>
+                            </div>
+                        </form> 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default" data-dismiss="modal">Lähetä</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- Ohje: bootstrap modal loppuu tähän--> 
+
+    </body>
+    <script type="text/javascript">
+
+    </script>
+
+</html>

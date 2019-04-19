@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Matkakuume</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Add Bootstrap & Jquery libraries -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!-- <script src="jquery.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="tyyli.css">
+        <link href="https://fonts.googleapis.com/css?family=Cute+Font|Gamja+Flower|Sunshiney|Yeon+Sung" rel="stylesheet">
+    </head>
+	<body>
+       
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Unelma matkasi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.tjareborg.fi/all-inclusive-aikuisille">All inclusive</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.temamatkat.fi/matkustaa/vaellusmatkat/">Vaeltamaan</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="https://www.sagamatkat.fi/islanti/kansainvaliset/ratsastusmatkat/">Islantiin ratsastamaan</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="https://www.kilroy.fi/aktiviteetit/vaellus/afrikka/etela-afrikka?destination=2271&activity=65">Arfikkaan rinkkamatkalle</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    
+        <div id="header" class="jumbotron jumbotron-fluid text-center">
+            <div class="container-fluid">
+                <h1 class="display-1  pt-5">Lomalle lomps!</h1>
+                <p class="display-4">Katso lämmöt ja kuvat kohteestasi</p>
+            </div>    
+        </div>
+
+
+        <div class="container-fluid" id="main-container">    	
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div id="weather">
+                                    <div id="description"></div>
+                                    <h1 id="temp"></h1>
+                                    <div id="location"></div>
+                                </div>  
+                            </div>
+                     </div>
+                     <div class="row ">
+                            <div class="col-md-12 pt-5 text-center">
+                                <input type="text" name="kaupunki" id="kaupunki" placeholder="Minkä kaupungin sään haluat?">
+                                <button onclick="haeSaa()" type="button" class="btn btn-info btn-lg btn-all">Hae sää</button>
+                            </div>
+                    </div>
+                </div>    
+                 
+                <div class="col-md-6 text-center pt-5 pb-5">
+                    <img class="img-fluid" id="vaihtuvaKuva" src="img/beach.jpg" alt="Kuva" height="300" width=auto>
+                </div> 
+            </div> 
+        
+             
+            <div class="row" id="kuvatOsio"> 
+                <div class="col-12">           
+                    <img class="kuvaGalleria" src="img/pic1.jpg">
+                    <img class="kuvaGalleria" src="img/pic2.jpg">
+                    <img class="kuvaGalleria" src="img/pic3.jpg">
+                            
+                                    
+                    <img class="kuvaGalleria" src="img/pic4.jpg">
+                    <img class="kuvaGalleria" src="img/pic5.jpg">
+                    <img class="kuvaGalleria" src="img/pic6.jpg">
+
+                    <img class="kuvaGalleria" src="img/pic7.jpg">
+                    <img class="kuvaGalleria" src="img/pic8.jpg">
+                    <img class="kuvaGalleria" src="img/pic9.jpg">
+
+
+                </div>
+            </div>
+      
+            
+            <div class="row text-center p-5" id="footer">
+               <div class="col-12">
+                    <h1 class="display-5">Parhaat matkalinkit:</h1>
+                    <a href="https://www.trivago.fi">Trivago</a><br>
+                    <a href="https://www.airbnb.fi">Airbnb</a><br>
+                    <a href="https://www.tui.fi/lomamatkat/">Tui</a><br>
+                    <a href="https://www.tjareborg.fi">Tjäreborg</a><br>
+                    
+                </div>
+            </div>
+       	
+
+        </div>  
+    </body>
+    <script>
+        function haeSaa() {
+        // function disabled 
+           /*  var cityName = document.getElementById('kaupunki').value;
+            var key = '<<putYourAPIKeyHere>>';
+            fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName+ '&appid=' + key)  
+            .then(function(resp) { return resp.json() }) // Convert data to json
+            .then(function(data) {
+                console.log(data);
+                muodostaSaaDatasta(data);
+            })
+            .catch(function() {
+                // catch any errors
+            });
+            arvoKuva(cityName); */
+        }
+
+        function arvoKuva(kaupunki){
+            var unsplashAlku = "https://source.unsplash.com/1600x900/?travelling,";
+            var unsplashOsoite = unsplashAlku.concat(kaupunki);
+            document.getElementById("vaihtuvaKuva").src=unsplashOsoite;
+        }
+
+        function muodostaSaaDatasta( data ) {
+            var celcius = Math.round(parseFloat(data.main.temp)-273.15);
+            var fahrenheit = Math.round(((parseFloat(data.main.temp)-273.15)*1.8)+32); 
+            
+            document.getElementById('description').innerHTML = data.weather[0].description;
+            document.getElementById('temp').innerHTML = celcius + '&deg;';
+            document.getElementById('location').innerHTML = data.name;
+        }
+   
+
+    </script>
+</html>
+
+
+
+
+
+
+

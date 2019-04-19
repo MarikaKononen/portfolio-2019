@@ -1,0 +1,49 @@
+body{
+    background-image: url(pictures/flowersOfTree.jpg);
+    background-size:cover;
+    
+}
+h1{
+    font-family: 'Merienda One', cursive;
+
+}
+
+p{
+    color: #14141f;
+    font-family: 'Merienda One', cursive;
+}
+
+img{
+    max-height: 200px;
+
+}
+
+iframe{
+    max-height: 150px;
+    width: auto;
+
+}
+#firstRow{
+    margin-bottom: 60px;
+   
+}
+#jumbotron{
+    background-color: snow;
+    opacity: 0.75;
+    font-family: 'Merienda One', cursive;
+    border-radius: 15px 50px;
+    margin: 60px;
+
+}
+.firstColumn{
+    background-color: snow;
+    opacity: 0.75;
+    border-radius: 15px 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;    
+
+}
+#myModal{
+    font-family: 'Merienda One', cursive;
+}

@@ -1,0 +1,23 @@
+img{
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+p{
+    font-family: "Shadows Into Light";
+    margin-left: 1.66%;
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff8000;
+    width: 30%;
+    padding-bottom: 20px;
+}
+span{
+    font-size: 0.5em;
+    text-transform: lowercase;
+    text-decoration: underline;
+    color:  #ff8000;
+
+}
