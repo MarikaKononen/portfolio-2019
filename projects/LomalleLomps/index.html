@@ -110,8 +110,8 @@
     </body>
     <script>
         function haeSaa() {
-        // function disabled 
-           /*  var cityName = document.getElementById('kaupunki').value;
+            // Correct API needed to add key variable
+           var cityName = document.getElementById('kaupunki').value;
             var key = '<<putYourAPIKeyHere>>';
             fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName+ '&appid=' + key)  
             .then(function(resp) { return resp.json() }) // Convert data to json
@@ -122,12 +122,12 @@
             .catch(function() {
                 // catch any errors
             });
-            arvoKuva(cityName); */
+            arvoKuva(cityName); 
         }
 
-        function arvoKuva(kaupunki){
+        function arvoKuva(city){
             var unsplashAlku = "https://source.unsplash.com/1600x900/?travelling,";
-            var unsplashOsoite = unsplashAlku.concat(kaupunki);
+            var unsplashOsoite = unsplashAlku.concat(city);
             document.getElementById("vaihtuvaKuva").src=unsplashOsoite;
         }
 
