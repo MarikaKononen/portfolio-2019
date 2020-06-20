@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <html>
 <title>CLFM</title>
 <meta charset="UTF-8">
@@ -21,22 +21,25 @@
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="fm-top">
+<nav class="fm-top">
   <div class="fm-bar fm-white fm-wide fm-padding fm-card" id="myNavbarScroll">
-    <a class="fm-bar-item fm-button  fm-hide-large fm-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#home" class="fm-bar-item fm-button" id="up"><b>CFML - </b>Marika Könönen<span class="fm-hide-large fm-hide-small"> - Web Developer</span></a>
+    <ul class="menu-list">
+      <li><a class="fm-bar-item fm-button  fm-hide-large fm-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a></li>
+      <li><a href="#home" class="fm-bar-item fm-button" id="up"><b>CFML - </b>Marika Könönen<span class="fm-hide-large fm-hide-small"> - Web Developer</span></a></li>
+    </ul>
+    
 
     <!-- Float links to the right. Hide them on small screens -->
-    <div class="fm-right fm-hide-medium fm-hide-small" >
-      <a href="#about" class="fm-bar-item fm-button">About</a>
-      <a href="#projects" class="fm-bar-item fm-button">Projects</a>
-      <a href="#programming" class="fm-bar-item fm-button">Tech Experience</a>
-      <a href="#work" class="fm-bar-item fm-button">Work Experience</a>
-      <a href="#contact" class="fm-bar-item fm-button">Contact</a>
+    <ul class="fm-right fm-hide-medium fm-hide-small menu-list">
+      <li><a href="#about" class="fm-bar-item fm-button">About</a></li>
+      <li><a href="#projects" class="fm-bar-item fm-button">Projects</a></li>
+      <li><a href="#programming" class="fm-bar-item fm-button">Tech Experience</a></li>
+      <li><a href="#work" class="fm-bar-item fm-button">Work Experience</a></li>
+      <li><a href="#contact" class="fm-bar-item fm-button">Contact</a></li>
       
-    </div>
+    </ul>
   </div>
-</div>
+</nav>
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <div id="myNavbar" class="fm-bar-block fm-white fm-hide fm-hide-large fm-top" style="margin-top:46px">
     <a href="#about" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">About</a>
@@ -408,6 +411,11 @@
             <td>Web Developer, Coding Teacher</td>
             <td>Finnmotion Oy</td> 
             <td>01.03.2017 - to present</td>
+          </tr>
+          <tr>
+            <td>Web Developer</td>
+            <td>Geniem Oy</td> 
+            <td>28.10.2019 - 14.05.2020</td>
           </tr>
           <tr>
             <td>R & D Engineer</td>
