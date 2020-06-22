@@ -262,6 +262,10 @@ a:hover{background-color:rgba(71, 49, 64, 0.7); color: white;}
     border-bottom: 1px solid black;
 }
 
+.active {
+    border-bottom: 1px solid black;
+}
+
 .menu-list a:focus, a:focus, input:focus, button:focus {
     outline: 2px solid black;
     outline-offset: 5px;

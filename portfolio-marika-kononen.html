@@ -24,29 +24,29 @@
 <nav class="fm-top">
   <div class="fm-bar fm-white fm-wide fm-padding fm-card" id="myNavbarScroll">
     <ul class="menu-list">
-      <li><a class="fm-bar-item fm-button  fm-hide-large fm-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a></li>
+      <li><a class="fm-bar-item fm-button  fm-hide-large fm-right" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a></li>
       <li><a href="#home" class="fm-bar-item fm-button" id="up"><b>CFML - </b>Marika Könönen<span class="fm-hide-large fm-hide-small"> - Web Developer</span></a></li>
     </ul>
     
 
     <!-- Float links to the right. Hide them on small screens -->
     <ul class="fm-right fm-hide-medium fm-hide-small menu-list">
-      <li><a aria-current="true" href="#about" class="fm-bar-item fm-button">About</a></li>
-      <li><a href="#projects" class="fm-bar-item fm-button">Projects</a></li>
-      <li><a href="#programming" class="fm-bar-item fm-button">Tech Experience</a></li>
-      <li><a href="#work" class="fm-bar-item fm-button">Work Experience</a></li>
-      <li><a href="#contact" class="fm-bar-item fm-button">Contact</a></li>
+      <li class="template__nav-item"><a aria-current="false" href="#about" class="fm-bar-item fm-button">About</a></li>
+      <li class="template__nav-item"><a aria-current="false" href="#projects" class="fm-bar-item fm-button">Projects</a></li>
+      <li class="template__nav-item"><a aria-current="false" href="#programming" class="fm-bar-item fm-button">Tech Experience</a></li>
+      <li class="template__nav-item"><a aria-current="false" href="#work" class="fm-bar-item fm-button">Work Experience</a></li>
+      <li class="template__nav-item"><a aria-current="false" href="#contact" class="fm-bar-item fm-button">Contact</a></li>
     </ul>
   </div>
 </nav>
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <nav id="myNavbar" class="fm-bar-block fm-white fm-hide fm-hide-large fm-top" style="margin-top:46px">
     <ul class="menu-list">
-      <li><a href="#about" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">About</a></li>
-      <li><a href="#projects" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Projects</a></li>
-      <li><a href="#programming" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Tech Experience</a></li>
-      <li><a href="#work" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Work Experience</a></li>
-      <li><a href="#contact" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Contact</a></li>
+      <li><a href="#about" class="fm-bar-item fm-button fm-padding-large" onclick="toggleMenu()">About</a></li>
+      <li><a href="#projects" class="fm-bar-item fm-button fm-padding-large" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#programming" class="fm-bar-item fm-button fm-padding-large" onclick="toggleMenu()">Tech Experience</a></li>
+      <li><a href="#work" class="fm-bar-item fm-button fm-padding-large" onclick="toggleMenu()">Work Experience</a></li>
+      <li><a href="#contact" class="fm-bar-item fm-button fm-padding-large" onclick="toggleMenu()">Contact</a></li>
     </ul>
   </nav>
 
@@ -65,7 +65,7 @@
 <div class="fm-content fm-padding" style="max-width:1564px">
 
      <!-- About Section -->
-  <div class="fm-container fm-padding-32" id="about">
+  <div class="fm-container fm-padding-32 template__section" id="about">
     <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">About Me</h3>
     <div class="fm-col l3 m6 fm-margin-bottom">   
         <ul class="fm-ul">
@@ -120,7 +120,7 @@
  </div>
 
   <!-- Project Section -->
-  <div class="fm-container fm-padding-32" id="projects">
+  <div class="fm-container fm-padding-32 template__section" id="projects">
     <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">Projects</h3>
   </div>
 
@@ -241,7 +241,7 @@
 
   <!-- Tech Experience Section -->
    <!-- First row -->
-  <div class="fm-container fm-padding-32" id="programming">
+  <div class="fm-container fm-padding-32 template__section" id="programming">
     <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">Tech Experience</h3>
     <p>I started to code 12 years ago but last two years my coding has been even more goal oriented than ever. 
       My strenght is definitely wide basic knowledge in different tech areas, but my focus is on web development and especially on full stack development.
@@ -388,7 +388,7 @@
   </div>
 
     <!-- Work Experience Section -->
-    <div class="fm-container fm-padding-32" id="work">
+    <div class="fm-container fm-padding-32 template__section" id="work">
       <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">Work Experience</h3>
     </div>
 
@@ -513,7 +513,7 @@
     </div>
 
   <!-- Contact Section -->
-  <div class="fm-container fm-padding-32" id="contact">
+  <div class="fm-container fm-padding-32 template__section" id="contact">
     <h3 class="fm-border-bottom fm-border-light-grey fm-padding-16">Contact</h3>
     <p>Lets get in touch and talk about your next project.</p>
     <form action="/action_page.php" target="_blank">
@@ -541,10 +541,9 @@
       <a href="https://www.instagram.com/codeformylife/" class="ssk ssk-instagram"></a>
       <a href="https://www.facebook.com/codeformylife/" class="ssk ssk-facebook"></a>
       <a href="https://twitter.com/koodiela" class="ssk ssk-twitter"></a>
-      <a href="https://www.facebook.com/koodielamastani/" class="ssk ssk-facebook"></a>
     </div>
   </div>
-  <p>Marika Könönen - Finnmotion Oy © 2019. All Rights Reserved.</p>
+  <p>Marika Könönen - Finnmotion Oy © 2020. All Rights Reserved.</p>
 </footer>
 
 
@@ -566,7 +565,7 @@
 
 
   // Used to toggle the menu on small screens when clicking on the menu button
-  function myFunction() {
+  function toggleMenu() {
     var x = document.getElementById("myNavbar");
     if (x.className.indexOf("fm-show") == -1) {
       x.className += " fm-show";
