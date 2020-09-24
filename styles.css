@@ -240,7 +240,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .fm-border-pale-yellow,.fm-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.fm-border-pale-blue,.fm-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .fm-opacity-div-not-text {background-color: rgba(71, 49, 64,0.7);}
 
-a:hover{background-color:rgba(71, 49, 64, 0.7); color: white;}
 #return-top{ font-size: 3rem; padding: 2px;}
 
 /* header text medium*/
@@ -271,3 +270,13 @@ a:hover{background-color:rgba(71, 49, 64, 0.7); color: white;}
     outline-offset: 5px;
 }
 
+/* styles for links */
+.fm-ul a {
+    border-bottom: 1px solid black;
+}
+
+a:hover {
+    background-color:rgba(71, 49, 64, 0.7); 
+    color: white;
+    border-bottom: none;
+}
