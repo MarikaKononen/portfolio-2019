@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>CLFM portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Added own JS file -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Rasa" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/social-share-kit.css" type="text/css">
+<link rel="stylesheet" href="styles.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="fm-top">
+  <div class="fm-bar fm-white fm-wide fm-padding fm-card" id="myNavbarScroll">
+    <a class="fm-bar-item fm-button  fm-hide-large fm-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="fm-bar-item fm-button" id="up"><b>CFML</b><span class="fm-hide-small"> - Marika Könönen</span><span class="fm-hide-large fm-hide-small"> - Web Developer</span></a>
+
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="fm-right fm-hide-medium fm-hide-small" >
+      <a href="portfolio-marika-kononen.html#about" class="fm-bar-item fm-button">About</a>
+      <a href="portfolio-marika-kononen.html#projects" class="fm-bar-item fm-button">Projects</a>
+      <a href="portfolio-marika-kononen.html#programming" class="fm-bar-item fm-button">Tech Experience</a>
+      <a href="portfolio-marika-kononen.html#work" class="fm-bar-item fm-button">Work Experience</a>
+      <a href="portfolio-marika-kononen.html#contact" class="fm-bar-item fm-button">Contact</a>
+      
+    </div>
+  </div>
+</div>
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="myNavbar" class="fm-bar-block fm-white fm-hide fm-hide-large fm-top" style="margin-top:46px">
+    <a href="portfolio-marika-kononen.html#about" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">About</a>
+    <a href="portfolio-marika-kononen.html#projects" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Projects</a>
+    <a href="portfolio-marika-kononen.html#programming" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Tech Experience</a>
+    <a href="portfolio-marika-kononen.html#work" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Work Experience</a>
+    <a href="portfolio-marika-kononen.html#contact" class="fm-bar-item fm-button fm-padding-large" onclick="myFunction()">Contact</a>
+  </div>
+
+
+<!-- Header -->
+<div class="fm-hide-medium fm-hide-large" style="min-height:50px"></div>
+
+<header class="fm-display-container fm-content fm-wide" style="max-width:1500px;" id="home">
+  <img class="fm-image" src="img/metsa.png" alt="Architecture" width="1500" height="800">
+  <div class="fm-display-middle fm-margin-top fm-opacity-div-not-text text-center">
+    <h1 class="fm-jumbo text-white header-small-h1"> <span class="fm-text-light-grey">Thank You!</span></h1>
+    <h3 class="fm-xxlarge text-white "><span class="fm-text-light-grey fm-hide-medium fm-hide-small">for sending the message</span></h3>
+    <h5 class="fm-xlarge text-white "><span class="fm-text-light-grey header-small-h5"><a href="portfolio-marika-kononen.html">Back to my page</a></span></h5>
+  </div>
+</header>
+
+<div class="fm-content fm-padding" style="max-width:1564px; min-height:350px;">
+
+
+
+</div>
+
+<!-- Footer -->
+<footer class="fm-center fm-black fm-padding-16">
+  <div class="col-sm-12 pb-3 pt-3">
+    <div class="d-sm-flex justify-content-center ssk-group ssk-rounded ssk-grayscale bottom-padding">
+      <a href="https://www.instagram.com/codeformylife/" class="ssk ssk-instagram"></a>
+      <a href="https://www.facebook.com/codeformylife/" class="ssk ssk-facebook"></a>
+      <a href="https://twitter.com/codeformylife" class="ssk ssk-twitter"></a>
+    </div>
+  </div>
+  <p>Marika Könönen - Finnmotion Oy © 2019. All Rights Reserved.</p>
+</footer>
+
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className.indexOf("fm-show") == -1) {
+        x.className += " fm-show";
+      } else { 
+        x.className = x.className.replace(" fm-show", "");
+      }
+    }
+
+</script>
+
+ 
+</body>
+
+
+
+</html>
+
